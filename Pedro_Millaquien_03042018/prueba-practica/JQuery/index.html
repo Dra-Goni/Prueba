@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prueba JQuery</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Archivo que se ultizara para escribir el codigo -->
+  <script src="js-evento.js"></script>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Realizar los siguientes Ejercicios</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <ol>
+          <li class="top-x3">Agregar evento click al botón "NUEVO COLOR", para cambiar el background del mismo botón por siguiente color #b6f9ae</li>
+          <div class="row">
+            <div class="col-lg-12 top-x2">
+              <button type="button" id="btnColor" class="btn btn-outline-secondary btn-sm">NUEVO COLOR</button>
+            </div>
+          </div>
+
+          <li class="top-x3">Los siguientes botones “restar” y “sumar” deben disminuir y aumentar respectivamente el valor definido en el input.
+            <ol type="a">
+              <li>Cuando se presione el botón restar, se debe restar (n-1) y validar que el valor del input no sea menor a 0.</li>
+              <li>Cuando se presione el botón sumar, se debe sumar (n+1) y validar que el valor del input no sea mayor a 15.</li>
+            </ol>
+          </li>
+          <div class="row">
+            <div class="col-lg-12 top-x2">
+              <button type="button" id="btnRestar" class="btn btn-outline-secondary btn-sm">restar</button>
+              <input type="text" id="TextNumber" value='0' class="input-example" disabled>
+              <button type="button" id="btnSumar" class="btn btn-outline-secondary btn-sm">sumar</button>
+            </div>
+          </div>
+
+          <li class="top-x3">Agregar evento click a cada caja (A, B y C) para que se copie el texto al presionar la caja(X) y que el mismo
+          texto de la caja presionada se pegue en la caja "FINAL"
+            <ol type="a">
+              <li>
+                Al presionar nuevamente la misma caja, mostrar una alerta que se está presionando nuevamente la caja: <span class="badge badge-light">alert("Ya se ha copiado el texto de la CAJA");</span>
+              </li>
+            </ol>
+          </li>
+          <div class="row">
+            <div class="col-lg-6">
+
+              <div class="top-x2">
+                <spam>CAJA A</span>
+                <div class="caja inicio"  id="caja1" >
+                  Texto simple que se encuentra en la caja A
+                </div>
+              </div>
+
+              <div class="top-x2">
+                <spam>CAJA B</span>
+                <div class="caja inicio" id="caja2">
+                  Texto simple que se encuentra en la caja B
+                </div>
+              </div>
+
+              <div class="top-x2">
+                <spam>CAJA C</span>
+                <div class="caja inicio" id="caja3">
+                  Texto simple que se encuentra en la caja C
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="top-x2">
+                <spam>CAJA FINAL</span>
+                <div class="caja final" id="caja4">
+                  <span style="color: silver">
+                     Aqui se debe pegar el texto automatico
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

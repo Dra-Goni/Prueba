@@ -1,0 +1,25 @@
+.top-x1 {margin-top: 10px;}
+.top-x2 {margin-top: 20px;}
+.top-x3 {margin-top: 30px;}
+.top-x4 {margin-top: 40px;}
+.top-x5 {margin-top: 50px;}
+
+.input-example{
+  text-align: center;
+  width: 40px;
+  margin-top: 3px;
+}
+
+.btn{
+  margin-top: -6px;
+}
+
+.caja{
+  border: 1px solid silver;
+  height: 100px;
+  padding: 5px;
+}
+
+.caja.inicio{
+  cursor: pointer;
+}
